@@ -10,9 +10,13 @@ import {
    FaTags,
 } from "react-icons/fa";
 import { Col } from "react-bootstrap";
+import { ThemeContext } from "../../contexts/ThemeContext";
+import { useContext } from "react";
 
 const Sidebar = () => {
    const [show, setShow] = useState(true);
+   const { isDark, darkTheme, lightTheme } = useContext(ThemeContext);
+
    return (
       <>
          <div
@@ -27,13 +31,21 @@ const Sidebar = () => {
             md={2}
             id="sidebar"
             className={show ? "" : "hidden"}
+            style={
+               isDark
+                  ? { background: darkTheme.bgSecondary }
+                  : { background: lightTheme.bgSecondary }
+            }
          >
-            <Nav className="col-12 d-md-block bg-light sidebar">
-               <Nav.Item>
+            <Nav className="col-12 d-md-block  sidebar">
+               <Nav.Item style={{ color: "white" }}>
                   <Link to="/">
                      <div>
                         <FaUserAlt
-                           style={{ marginRight: "10px", paddingBottom: "2px" }}
+                           style={{
+                              marginRight: "10px",
+                              paddingBottom: "2px",
+                           }}
                         />
                         Customers
                      </div>
