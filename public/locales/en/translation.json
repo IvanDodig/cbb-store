@@ -1,0 +1,9 @@
+{
+   "test": "proba",
+   "headings": {
+      "customers": "Customers list",
+      "products": "Products list",
+      "brands": "Brands list",
+      "categories": "Categories list"
+   }
+}

@@ -1,0 +1,9 @@
+{
+   "test": "proba",
+   "headings": {
+      "customers": "Lista kupaca",
+      "products": "Lista proizvoda",
+      "brands": "Lista brendova",
+      "categories": "Lista kategorija"
+   }
+}

@@ -1,13 +1,202 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+   margin: 0;
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+      "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+      "Helvetica Neue", sans-serif;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+}
+
+h2 {
+   margin-bottom: 30px !important;
+}
+
+a:hover {
+   text-decoration: none;
+   color: white;
+}
+.container-fluid {
+   padding: 0 !important;
+}
+
+.navbar {
+   position: absolute !important;
+   top: 0 !important;
+   width: 100% !important;
+   z-index: 111 !important;
+}
+
+.row {
+   width: 100% !important;
+   margin: 0 !important;
+}
+
+.hidden {
+   display: none;
+}
+
+.no-padding {
+   padding: 0 !important;
+}
+
+.search-label {
+   width: 30%;
+}
+/* HEADER NAVBAR */
+.home a {
+   color: white;
+}
+.home a:hover {
+   text-decoration: none !important ;
+   color: white;
+}
+
+.header-nav a:hover {
+   text-decoration: none;
+}
+.header-nav a div {
+   padding: 6px 20px;
+   margin: 0 10px;
+   text-align: left;
+   border-radius: 5px;
+   font-size: 18px;
+   color: white;
+   transition: ease 0.3s all;
+}
+.header-nav a div:hover {
+   background-color: gainsboro;
+   color: black;
+}
+
+/* SIDEBAR BUTTON TOGGLE */
+.toggle-button-active {
+   position: absolute;
+   top: 70px;
+   left: 200px;
+   z-index: 200;
+   background-color: lightgray;
+   cursor: pointer;
+   height: 38px;
+   width: 38px;
+   border-radius: 50%;
+   text-align: center;
+   padding-top: 5px;
+}
+.toggle-button {
+   position: absolute;
+   top: 8px;
+   left: 8px;
+   z-index: 200;
+   background-color: darkgray;
+   cursor: pointer;
+   height: 38px;
+   width: 38px;
+   border-radius: 5px;
+   text-align: center;
+   padding-top: 5px;
+}
+
+/* SIDEBAR LINKS */
+#sidebar {
+   padding-left: 0 !important;
+}
+
+.sidebar {
+   display: flex;
+   flex-direction: row;
+   min-height: 100vh !important;
+   padding-top: 130px !important;
+   padding-left: 20px !important;
+   padding-right: 25px !important ;
+   box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+   position: absolute !important;
+   z-index: 100;
+}
+.sidebar a:hover {
+   text-decoration: none;
+}
+.sidebar a div {
+   margin: 10px auto;
+   padding: 10px 20px;
+   text-align: left;
+   border-radius: 5px;
+   font-size: 18px;
+   color: black;
+   transition: ease 0.3s all;
+}
+.sidebar a div:hover {
+   background-color: lightgray;
+}
+
+/* MAIN CONTENT STYLING */
+
+.main-content {
+   padding: 0 !important;
+   max-height: 100vh !important;
+   position: relative;
+}
+.content {
+   overflow-y: scroll;
+   min-height: 100vh !important;
+   max-height: 100vh !important;
+   width: 100% !important;
+   padding: 80px 40px !important;
+}
+
+/* CREATE USER STYLING */
+.form-container {
+   border: 1px solid gainsboro;
+   width: 70%;
+   margin: auto;
+   background-color: rgb(243, 243, 243);
+   padding: 0 5%;
+}
+.form-container h2 {
+   text-align: center;
+}
+
+.form-container label {
+   margin-top: 20px;
+}
+
+.buttons {
+   margin: 30px 0;
+   display: flex;
+   justify-content: flex-end;
+}
+
+.buttons .cancel-button {
+   cursor: pointer;
+   background-color: white;
+   border-radius: 3px;
+   margin: 25px 0;
+   padding-top: 5px;
+   border: rgb(85, 85, 85) solid 1px;
+   color: rgb(85, 85, 85);
+   width: 25%;
+   text-align: center;
+}
+
+.buttons .submit {
+   width: 25%;
+   margin: 0 10px;
+   background-color: rgb(85, 85, 85);
+   color: white;
+}
+
+/* ERROR MESSAGE STYLING */
+
+.error {
+   border: solid 2px red;
+   background-color: lightpink;
+   text-align: center;
+   margin: auto;
+   margin-top: 15%;
+   width: 70%;
+   padding: 50px 0 30px;
 }
